@@ -1,0 +1,479 @@
+
+body {
+    background-color: #000;
+    background-image: url('https://web.archive.org/web/20091024014902/http://geocities.com/TimesSquare/Labyrinth/6131/starfield.gif');
+    color: #FFD700;
+    font-family: "Courier New", Courier, monospace;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    cursor: url('data:image/x-icon;base64,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'), auto;
+}
+
+.crt-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: 
+        linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.15) 50%), 
+        linear-gradient(90deg, rgba(255, 0, 0, 0.04), rgba(0, 255, 0, 0.02), rgba(0, 0, 255, 0.04));
+    background-size: 100% 3px, 3px 100%;
+    pointer-events: none;
+    z-index: 9999;
+    animation: flicker 0.15s infinite;
+}
+
+@keyframes flicker {
+    0% { opacity: 0.97; }
+    50% { opacity: 1; }
+    100% { opacity: 0.98; }
+}
+
+#tie-fighter {
+    width: 32px;
+    height: 32px;
+    position: fixed;
+    pointer-events: none;
+    background-image: url('https://web.archive.org/web/20091027150536/http://geocities.com/Hollywood/Hills/9805/tie.gif');
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: 9998;
+    transition: all 0.1s ease-out;
+}
+
+.death-star {
+    position: fixed;
+    width: 600px;
+    height: 600px;
+    bottom: -150px;
+    right: -150px;
+    background: radial-gradient(circle at 30% 30%, #555, #111);
+    border-radius: 50%;
+    pointer-events: none;
+    z-index: 1;
+    box-shadow: 
+        0 0 120px rgba(255, 215, 0, 0.4),
+        0 0 200px rgba(255, 215, 0, 0.2),
+        inset -50px -50px 100px rgba(0, 0, 0, 0.9),
+        inset 20px 20px 60px rgba(150, 150, 150, 0.3);
+}
+
+.death-star::before {
+    content: '';
+    position: absolute;
+    width: 300px;
+    height: 40px;
+    background: linear-gradient(90deg, transparent, rgba(255, 215, 0, 0.1), transparent);
+    top: 120px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 50%;
+}
+
+.death-star::after {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: 
+        linear-gradient(rgba(100, 100, 100, 0.1) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(100, 100, 100, 0.1) 1px, transparent 1px);
+    background-size: 40px 40px;
+    border-radius: 50%;
+    opacity: 0.3;
+}
+
+/* Twinkling Stars Background */
+.stars {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 0;
+    overflow: hidden;
+}
+
+.stars::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: 
+        radial-gradient(2px 2px at 20px 30px, #eee, rgba(0,0,0,0)),
+        radial-gradient(2px 2px at 60px 70px, #fff, rgba(0,0,0,0)),
+        radial-gradient(1px 1px at 50px 50px, #fff, rgba(0,0,0,0)),
+        radial-gradient(1px 1px at 130px 80px, #fff, rgba(0,0,0,0)),
+        radial-gradient(2px 2px at 90px 10px, #fff, rgba(0,0,0,0)),
+        radial-gradient(1px 1px at 40px 90px, #fff, rgba(0,0,0,0)),
+        radial-gradient(1px 1px at 140px 30px, #fff, rgba(0,0,0,0)),
+        radial-gradient(2px 2px at 10px 120px, #fff, rgba(0,0,0,0)),
+        radial-gradient(1px 1px at 100px 100px, #fff, rgba(0,0,0,0)),
+        radial-gradient(1px 1px at 120px 50px, #fff, rgba(0,0,0,0));
+    background-repeat: repeat;
+    background-size: 200px 200px;
+    animation: twinkle 5s ease-in-out infinite;
+}
+
+.stars::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: 
+        radial-gradient(1px 1px at 20px 50px, #fff, rgba(0,0,0,0)),
+        radial-gradient(1px 1px at 80px 40px, #fff, rgba(0,0,0,0)),
+        radial-gradient(2px 2px at 30px 70px, #fff, rgba(0,0,0,0)),
+        radial-gradient(1px 1px at 110px 90px, #fff, rgba(0,0,0,0)),
+        radial-gradient(1px 1px at 70px 20px, #fff, rgba(0,0,0,0)),
+        radial-gradient(1px 1px at 50px 110px, #fff, rgba(0,0,0,0)),
+        radial-gradient(2px 2px at 120px 70px, #fff, rgba(0,0,0,0)),
+        radial-gradient(1px 1px at 40px 30px, #fff, rgba(0,0,0,0)),
+        radial-gradient(1px 1px at 140px 100px, #fff, rgba(0,0,0,0)),
+        radial-gradient(1px 1px at 60px 80px, #fff, rgba(0,0,0,0));
+    background-repeat: repeat;
+    background-size: 200px 200px;
+    animation: twinkle 4s ease-in-out infinite reverse;
+}
+
+@keyframes twinkle {
+    0%, 100% { opacity: 0.3; }
+    50% { opacity: 1; }
+}
+
+.web-container {
+    max-width: 850px;
+    margin: 15px 0 15px 50px;
+    padding: 10px;
+}
+
+.top-marquee {
+    background: #1a1a3e;
+    color: #FFD700;
+    font-weight: bold;
+    font-size: 14px;
+    border: 3px ridge #FFD700;
+    padding: 8px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 10px rgba(255, 215, 0, 0.5);
+    animation: marquee 15s linear infinite;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+@keyframes marquee {
+    0% { transform: translateX(100%); }
+    100% { transform: translateX(-100%); }
+}
+
+.small-yellow {
+    font-size: 10px;
+    color: #FFFF00;
+}
+
+.small-green {
+    font-size: 9px;
+    color: #00FF00;
+}
+
+.webmaster-section {
+    margin-top: 15px;
+}
+
+.email-section {
+    margin-top: 10px;
+}
+
+.email-section img {
+    cursor: pointer;
+}
+
+.guestbook {
+    cursor: pointer;
+    max-width: 100%;
+}
+
+.webring-section {
+    margin-top: 20px;
+}
+
+.webring-link {
+    color: #00FF00;
+}
+
+.copyright {
+    font-size: 10px;
+    color: #888888;
+}
+
+.spinning-logo {
+    margin: 20px 0;
+    animation: subtle-glow 2s ease-in-out infinite;
+}
+
+@keyframes subtle-glow {
+    0%, 100% { filter: brightness(1); }
+    50% { filter: brightness(1.2) drop-shadow(0 0 20px rgba(255, 215, 0, 0.5)); }
+}
+
+.main-table {
+    width: 100%;
+    border: 4px ridge #1a73e8;
+    background-color: rgba(10, 10, 50, 0.7);
+    box-shadow: 0 0 20px rgba(26, 115, 232, 0.4);
+}
+
+.sidebar {
+    background-color: rgba(0, 0, 0, 0.8);
+    border-right: 2px solid #6F00D2;
+}
+
+.content {
+    background-color: rgba(0, 0, 50, 0.5);
+}
+
+h1 {
+    color: #FFD700;
+    text-shadow: 
+        2px 2px 0 #6F00D2,
+        3px 3px 0 #1a73e8,
+        4px 4px 5px #000;
+    text-align: center;
+    text-decoration: underline;
+    font-size: 28px;
+    margin: 10px 0;
+    animation: color-shift 3s infinite;
+}
+
+@keyframes color-shift {
+    0%, 100% { color: #FFD700; }
+    25% { color: #FFA500; }
+    50% { color: #FFFF00; }
+    75% { color: #6F00D2; }
+}
+
+.nav-button {
+    background: linear-gradient(135deg, #1a73e8 0%, #0f47a0 100%);
+    border-top: 3px solid #FFD700;
+    border-left: 3px solid #FFD700;
+    border-right: 3px solid #000;
+    border-bottom: 3px solid #000;
+    color: #FFD700;
+    padding: 8px;
+    margin-bottom: 8px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 12px;
+    cursor: pointer;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8), inset 0 0 10px rgba(26, 115, 232, 0.3);
+    transition: all 0.1s;
+}
+
+.nav-button:hover {
+    background: linear-gradient(135deg, #2a82f5 0%, #1a62d5 100%);
+    transform: translateY(-2px);
+    box-shadow: 0 0 15px rgba(111, 0, 210, 0.6);
+}
+
+.nav-button:active {
+    border: 3px inset #6F00D2;
+    transform: translateY(1px);
+    box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.blink {
+    animation: blink 1s infinite;
+}
+
+label {
+    cursor: pointer;
+    margin-right: 15px;
+}
+
+.vote-button {
+    background: linear-gradient(135deg, #FFD700 0%, #FFA500 100%);
+    border-top: 2px solid #FFFF00;
+    border-left: 2px solid #FFFF00;
+    border-right: 2px solid #6F00D2;
+    border-bottom: 2px solid #6F00D2;
+    color: #000;
+    font-weight: bold;
+    padding: 5px 15px;
+    margin-top: 10px;
+    cursor: pointer;
+    font-family: "Courier New", Courier, monospace;
+    box-shadow: 0 0 10px rgba(255, 215, 0, 0.4);
+}
+
+.vote-button:active {
+    border: 2px inset #6F00D2;
+    box-shadow: inset 0 0 5px rgba(111, 0, 210, 0.5);
+}
+
+.guestbook {
+    transition: transform 0.2s;
+}
+
+.guestbook:hover {
+    transform: scale(1.1);
+    filter: brightness(1.3);
+}
+
+.hit-counter {
+    background: #000;
+    border: 3px groove #00FF00;
+    display: inline-block;
+    padding: 10px;
+    margin-top: 15px;
+    box-shadow: 
+        0 0 15px rgba(0, 255, 0, 0.6),
+        inset 0 0 10px rgba(0, 255, 0, 0.2);
+}
+
+.digit {
+    background: linear-gradient(180deg, #001100 0%, #003300 100%);
+    color: #00FF00;
+    font-family: 'Courier New', monospace;
+    font-size: 28px;
+    font-weight: bold;
+    padding: 5px 10px;
+    border: 2px solid #00AA00;
+    margin: 0 2px;
+    display: inline-block;
+    text-shadow: 0 0 10px #00FF00;
+    box-shadow: inset 0 0 8px rgba(0, 255, 0, 0.4), 0 0 5px rgba(0, 255, 0, 0.3);
+}
+
+.dithered-image img {
+    filter: contrast(140%) saturate(90%) brightness(105%);
+    image-rendering: pixelated;
+    border: 3px ridge #808080;
+    padding: 5px;
+    background: #000;
+}
+
+.banner-exchange {
+    margin-top: 25px;
+    border: 2px dashed #FFD700;
+    padding: 15px;
+    background: rgba(0, 0, 0, 0.8);
+    box-shadow: 0 0 15px rgba(255, 215, 0, 0.3);
+}
+
+.banner-exchange img {
+    margin: 5px;
+    image-rendering: pixelated;
+    border: 1px solid #666;
+    transition: transform 0.2s;
+}
+
+.banner-exchange img:hover {
+    transform: scale(1.1);
+    border-color: #FFFF00;
+}
+
+.footer {
+    margin-top: 30px;
+    border-top: 3px ridge #6F00D2;
+    padding-top: 15px;
+    background: rgba(10, 10, 50, 0.5);
+}
+
+a {
+    color: #1a73e8;
+    text-decoration: underline;
+}
+
+a:hover {
+    color: #FFD700;
+    text-decoration: none;
+    text-shadow: 0 0 5px rgba(255, 215, 0, 0.5);
+}
+
+a:visited {
+    color: #6F00D2;
+}
+
+@keyframes blink {
+    0%, 49% { opacity: 1; }
+    50%, 100% { opacity: 0; }
+}
+
+blink {
+    animation: blink 1s infinite;
+}
+
+input[type="radio"] {
+    cursor: pointer;
+    margin: 5px;
+}
+
+center {
+    display: block;
+    text-align: center;
+}
+
+font {
+    display: inline;
+}
+
+::-webkit-scrollbar {
+    width: 16px;
+    background: #000;
+}
+
+::-webkit-scrollbar-track {
+    background: #1a1a1a;
+    border: 1px solid #333;
+}
+
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(180deg, #c0c0c0 0%, #808080 100%);
+    border-top: 2px solid #fff;
+    border-left: 2px solid #fff;
+    border-right: 2px solid #404040;
+    border-bottom: 2px solid #404040;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(180deg, #d0d0d0 0%, #909090 100%);
+}
+
+@media (max-width: 768px) {
+    .web-container {
+        margin: 5px;
+        padding: 5px;
+    }
+    
+    .main-table {
+        font-size: 12px;
+    }
+    
+    .sidebar {
+        width: 100% !important;
+    }
+    
+    h1 {
+        font-size: 20px;
+    }
+    
+    .digit {
+        font-size: 20px;
+        padding: 3px 6px;
+    }
+}
+
+body.konami {
+    animation: rainbow-bg 5s infinite;
+}
+
+@keyframes rainbow-bg {
+    0% { background-color: #ff0000; }
+    16% { background-color: #ff7f00; }
+    33% { background-color: #ffff00; }
+    50% { background-color: #00ff00; }
+    66% { background-color: #0000ff; }
+    83% { background-color: #8b00ff; }
+    100% { background-color: #ff0000; }
+}
